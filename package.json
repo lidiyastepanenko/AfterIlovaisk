@@ -1,0 +1,40 @@
+{
+  "name": "AfterIlovaisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "4.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm install express",
+    "start": "node server.js"
+  },
+  "author": "Lidiya Stepanenko",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.0",
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "gulp-audiosprite": "^1.0.5",
+    "express": "^4.13.4"
+  }
+}

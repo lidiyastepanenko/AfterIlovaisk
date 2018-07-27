@@ -14,15 +14,16 @@ img
 @font-face 
 	font-family: Oswald;
 	src: url(../fonts/Oswald.ttf);
+@font-face
 	font-family: MyriadPro;
-	src: url(../fonts/MyriadPro.otf);
+	src: url(../fonts/MyriadPro.ttf);
 body 
   font: Oswald, Arial, Helvetica, sans-serif;
 
 
 .wrapper
 	width: 100%;
-	max-width: 1600px;
+	//max-width: 1600px;
 	margin: 0 auto;
 
 .top-section
@@ -105,17 +106,27 @@ a.photo-author
 #person-left, #person-right
 	width: 100%;
 	margin: auto;
+.person-wrap
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px;
 .left-story
+	padding: 15px;
 	float: left;
-	width: 33%;
+	width: 30%;
+	//width: calc(33% - 15px);
 .left-story h1
-	padding: 20% 4% 0 10%;
 	font-family: Oswald;
+	padding: 0px 10px 10px 10px;
+	text-align: right;
 	font-weight: bold;
 	font-size: 35px;
 .left-story p
-	padding: 4% 5% 4% 9%;
 	font-family: MyriadPro;
+	padding-top: 10px;
 	font-size: 19px;
 	line-height: 26px;
 .right-photo
@@ -131,7 +142,9 @@ a.photo-author
 .right-story,
 .right-story-subt
 	float: right;
-	width: 33%;
+	padding: 15px;
+	width: 30%;
+	//width: calc(33% - 15px);
 // .right-story-subt
 // 	display: none;
 // .subt
@@ -141,13 +154,13 @@ a.photo-author
 // 	overflow: hidden;
 
 .right-story h1
-	padding: 20% 4% 0 9%;
 	font-family: Oswald;
+	padding: 0px 10px 10px 10px;
 	font-weight: bold;
 	font-size: 35px;
 .right-story p
-	padding: 5% 8% 4% 10%;
 	font-family: MyriadPro;
+	padding-top: 10px;
 	font-size: 19px;
 	line-height: 26px;
 .DNIPRO1_AKNOD, .DONBAS_MOSKIT
@@ -316,20 +329,20 @@ footer
 
 @media screen and (min-width: 1124px) and (max-width: 1440px)
 	.left-story h1, .right-story h1
-		padding: 17% 4% 0 9%;
 		font-size: 25px;
 		line-height: 34px;
 		font-weight: bold;
 	.left-story p, .right-story p
 		font-size: 18px;
-		line-height: 17px;
+		line-height: 19px;
 
 @media screen and (min-width: 964px) and (max-width: 1124px)
-	.left-story h1, .right-story h1,
-		font-size: 24px;
+	.left-story h1, .right-story h1
+		font-size: 22px;
+		//line-height: 26px;
 	.left-story p, .right-story p
-		font-size: 14px;
-		line-height: 15px;
+		font-size: 16px;
+		line-height: 16px;
 	.support
 		font-size: 18px;
 
@@ -337,13 +350,12 @@ footer
 	a.photo-author
 		font-size: 12px;
 	.left-story h1, .right-story h1
-		padding: 13% 3% 0 9%;
-		font-size: 19px;
+		font-size: 18px;
 		font-weight: bold;
 	.left-story p, .right-story p
-		padding: 5% 5% 2% 8%;
 		font-size: 12px;
 		line-height: 13px;
+		padding-top: 0px;
 	.left-foto>.play,
 	.left-foto>.stop
 		position: absolute;
@@ -513,27 +525,27 @@ footer
 .wrapper:after,
 .partners:after,
 .list:after,
-.DONBAS_FILIN:after,
-.DONBAS_LEX:after,
-.DNIPRO1_AKNOD:after,
-.DNIPRO1_Chaba:after,
-.DNIPRO1_FOKS:after,
-.DNIPRO1_Pravosek:after,
-.DONBAS_Italianets:after,
-.DONBAS_MOSKIT:after,
-.PRESS_Gosha_Ivan:after,
-.DNIPRO1_Pekar:after,
-.DONBAS_Yar:after,
-.SVITIAZ_Liashuk:after,
-.DONBAS_Lunatik:after,
-.DONBAS_RED:after,
-.Donbas_Hmara:after,
-.SVITIAZ_KUSHCH:after,
-.ZSU_Chernyh:after,
-.DNIPRO1_Savchenko:after,
-.Donbas_CHUB:after,
-.DONBAS_HREK:after,
-.DONBAS_Zhora:after,
+//.DONBAS_FILIN:after,
+//.DONBAS_LEX:after,
+//.DNIPRO1_AKNOD:after,
+//.DNIPRO1_Chaba:after,
+//.DNIPRO1_FOKS:after,
+//.DNIPRO1_Pravosek:after,
+//.DONBAS_Italianets:after,
+//.DONBAS_MOSKIT:after,
+//.PRESS_Gosha_Ivan:after,
+//.DNIPRO1_Pekar:after,
+//.DONBAS_Yar:after,
+//.SVITIAZ_Liashuk:after,
+//.DONBAS_Lunatik:after,
+//.DONBAS_RED:after,
+//.Donbas_Hmara:after,
+//.SVITIAZ_KUSHCH:after,
+//.ZSU_Chernyh:after,
+//.DNIPRO1_Savchenko:after,
+//.Donbas_CHUB:after,
+//.DONBAS_HREK:after,
+//.DONBAS_Zhora:after,
 #person-left:after,
 #person-right:after,
 footer:after

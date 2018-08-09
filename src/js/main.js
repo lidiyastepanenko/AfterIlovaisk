@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(document).ready(function() {
   $.fn.shuffle = function() {
     var allElems = this.get(),
       getRandom = function(max) {
@@ -15,8 +15,8 @@ $(window).load(function() {
         });
           return $(shuffled);
   };
-  // $('.list #person-left').shuffle();
-  // $('.list #person-right').shuffle();
+  $('.list #person-left').shuffle();
+  $('.list #person-right').shuffle();
   
   // var audioElement = document.querySelector("audio");
   // console.log(audioElement);

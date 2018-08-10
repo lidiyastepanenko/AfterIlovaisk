@@ -95,6 +95,15 @@ $(document).ready(function() {
       }
     );
   });
+   $("#navigation").on("click","a", function (e) {
+    e.preventDefault();
+        var id  = $(this).attr('href'),
+            top = ($(id).offset().top-100);
+        console.log(id);
+        console.log(top);
+        $('body,html').animate({scrollTop: top}, 1500);
+        // $(".navigation").addClass('fixed');
+    });
 /*Scroll*/
   $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {

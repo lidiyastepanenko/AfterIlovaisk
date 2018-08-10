@@ -73,12 +73,50 @@ a.photo-author
 	height: 40px;
 	opacity: 0.3;
 	position: fixed;
-	bottom: 50px;
-	right: 40px;
+	bottom: 40px;
+	right: 20px;
 	display: none;
 	text-indent: -9999px;
+	z-index: 99;
 	background: url('../img/icon_top.png') no-repeat;
-
+//.filter
+//	display: block;
+//	position: fixed;
+//	width: 50px;
+//	height: 50px;
+//	right: 20px;
+//	top: 30px;
+//	z-index: 99;
+//.search
+//	background: url('../img/search.png') no-repeat 50% 50%;
+//	display: block;
+//	width: 40px;
+//	height: 40px;
+//	border-radius: 50%;
+//	background-color: rgb(0,0,0, 0.4);
+//	//opacity: 0.3;
+.navigation
+	display: block;
+	text-align: center;
+	padding: 15px 10px;
+	background-color: rgba(132,138,106,0.7);
+	z-index: 3;
+//.navigation.fixed
+//	display: flex;
+//	flex-wrap: wrap;
+//	flex-direction: row;
+//	justify-content: space-between;
+//	position: fixed;
+//	width: 100%;
+//	top: 0px;
+//	z-index: 3;
+.navigation a
+	padding: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #ffffff
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 6px;
 .list
 	width: 100%;
 	margin: auto;
@@ -453,6 +491,9 @@ footer
 		float: left;
 		font-size: 14px;
 		padding: 0 0 10px 30px;
+	.scrollup
+		right: 10px;
+		bottom: 20px;
 @media screen and (min-width: 240px) and (max-width: 614px)
 	a.photo-author
 		font-size: 8px;
@@ -521,36 +562,38 @@ footer
 		float: left;
 		font-size: 12px;
 		padding: 0 0 10px 10px;
-
+	.scrollup
+		right: 10px;
+		bottom: 20px;
 
 	/* clearfix*/
 .wrapper:after,
 .partners:after,
 .list:after,
-//.DONBAS_FILIN:after,
-//.DONBAS_LEX:after,
-//.DNIPRO1_AKNOD:after,
-//.DNIPRO1_Chaba:after,
-//.DNIPRO1_FOKS:after,
-//.DNIPRO1_Pravosek:after,
-//.DONBAS_Italianets:after,
-//.DONBAS_MOSKIT:after,
-//.PRESS_Gosha_Ivan:after,
-//.DNIPRO1_Pekar:after,
-//.DONBAS_Yar:after,
-//.SVITIAZ_Liashuk:after,
-//.DONBAS_Lunatik:after,
-//.DONBAS_RED:after,
-//.Donbas_Hmara:after,
-//.SVITIAZ_KUSHCH:after,
-//.ZSU_Chernyh:after,
-//.DNIPRO1_Savchenko:after,
-//.Donbas_CHUB:after,
-//.DONBAS_HREK:after,
-//.DONBAS_Zhora:after,
+.DONBAS_FILIN:after,
+.DONBAS_LEX:after,
+.DNIPRO1_AKNOD:after,
+.DNIPRO1_Chaba:after,
+.DNIPRO1_FOKS:after,
+.DNIPRO1_Pravosek:after,
+.DONBAS_Italianets:after,
+.DONBAS_MOSKIT:after,
+.PRESS_Gosha_Ivan:after,
+.DNIPRO1_Pekar:after,
+.DONBAS_Yar:after,
+.SVITIAZ_Liashuk:after,
+.DONBAS_Lunatik:after,
+.DONBAS_RED:after,
+.Donbas_Hmara:after,
+.SVITIAZ_KUSHCH:after,
+.ZSU_Chernyh:after,
+.DNIPRO1_Savchenko:after,
+.Donbas_CHUB:after,
+.DONBAS_HREK:after,
+.DONBAS_Zhora:after,
 #person-left:after,
 #person-right:after,
 footer:after
-  content: '';
+  //content: '';
   display: table;
   clear: both;

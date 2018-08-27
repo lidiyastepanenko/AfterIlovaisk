@@ -1,0 +1,575 @@
+*
+  margin: 0;
+  padding: 0;
+
+ul
+  list-style: none;
+
+a
+  text-decoration: none;
+img
+	width: 100%;
+	vertical-align: middle;
+	height: auto;
+	border: none;
+@font-face 
+	font-family: Oswald;
+	src: url(../fonts/Oswald.ttf);
+@font-face
+	font-family: MyriadPro;
+	src: url(../fonts/MyriadPro.ttf);
+body 
+  font: Oswald, Arial, Helvetica, sans-serif;
+
+
+.wrapper
+	width: 100%;
+	//max-width: 1600px;
+	margin: 0 auto;
+
+.top-section
+	position: relative;
+	background: #1b5169;
+	width: 100%;
+	margin: 0 auto;
+
+header
+	width: 100%;
+	position: absolute;
+	height: 116px;
+
+.social
+	position: relative;
+	float: right;
+	clear: right;
+	margin: 3% 9% 0 0;
+
+.social li
+	float: right;
+	margin-left: 25px;
+.modal
+	font-family: Oswald;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+.about 
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	display: none;
+
+.top-section:hover .about
+	display: block;
+a.photo-author
+	font-family: Oswald;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 10px;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.2;
+.scrollup
+	width: 40px;
+	height: 40px;
+	opacity: 0.3;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	display: none;
+	z-index: 99;
+	text-indent: -9999px;
+	background: url('../img/icon_top.png') no-repeat;
+
+.list
+	width: 100%;
+	margin: auto;
+
+.right-photo>.play, .right-photo>.stop
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 15px;
+	left: 15px;
+
+.stop
+	background: url(../img/stop.png) no-repeat 0 0;
+	display: none;
+.play
+	background: url(../img/play.png) no-repeat 0 0;
+
+.left-foto>.play,
+.left-foto>.stop
+	position: absolute;
+	top: 15px;
+	left: 90%;
+	width: 50px;
+	height: 50px;
+#person-left, #person-right
+	width: 100%;
+	margin: auto;
+.person-wrap
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px;
+.left-story
+	padding: 15px 0px;
+	float: left;
+	width: 32%;
+	//width: calc(33% - 15px);
+.left-story h1
+	font-family: Oswald;
+	padding: 0 10px 10px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 35px;
+.left-story p
+	font-family: MyriadPro;
+	padding: 10px 0 0 15px;
+	font-size: 19px;
+	line-height: 26px;
+.right-photo
+	position: relative;
+	float: right;
+	width: 66%;
+#image-bw
+	display: none;
+.left-foto
+	position: relative;
+	float: left;
+	width: 66%;
+.right-story,
+.right-story-subt
+	float: right;
+	padding: 15px 0px;
+	width: 32%;
+	//width: calc(33% - 15px);
+// .right-story-subt
+// 	display: none;
+// .subt
+// 	margin: 40px auto
+// 	width: 70%;
+// 	height: 300px;
+// 	overflow: hidden;
+
+.right-story h1
+	font-family: Oswald;
+	padding: 0 10px 10px;
+	font-weight: bold;
+	font-size: 35px;
+.right-story p
+	font-family: MyriadPro;
+	padding: 10px 15px 0 0;
+	font-size: 19px;
+	line-height: 26px;
+.DNIPRO1_AKNOD, .DONBAS_MOSKIT
+	background: #7f8443;
+	color: #ffffff;
+.DNIPRO1_Chaba, .DONBAS_Zhora
+	background: #364320;
+	color: #ffffff;
+.DONBAS_FILIN, .PRESS_Gosha_Ivan, .SVITIAZ_Liashuk, .DONBAS_HREK	
+	background: #1f2810;
+	color: #fff;
+.DONBAS_LEX, .DNIPRO1_Pekar, .DONBAS_RED, .ZSU_Chernyh, .DONBAS_Italianets
+	background: #d9e0c9;
+	color: #222222;
+.DNIPRO1_FOKS, .DONBAS_Lunatik, .Donbas_Hmara, .Donbas_CHUB
+	background: #d4cbb3;
+	color: #222222;
+.DNIPRO1_Pravosek, .DONBAS_Zhora
+	background: #cdc3a7;
+	color: #222222;
+.DONBAS_Yar, .SVITIAZ_KUSHCH, .DNIPRO1_Savchenko
+	background: #8c9152;
+	color: #fff;
+
+
+.right-story-subt
+	display: none;
+	width: 100%;
+	// padding: 5px 10px;
+	// text-align: center;
+	// background-color: rgba(217, 224, 201, 0.2);
+	position: relative;
+	text-indent: 10px;	
+	color: #fff;
+
+@keyframes rotateWord
+	0% 
+		opacity: 0; 
+	1% 
+		opacity: 1;  
+	5% 
+		opacity: 1; 
+	95% 
+		opacity: 1; 
+	99% 
+		opacity: 1;
+	100% 
+		opacity: 0;
+
+.story-subt-1 span	
+	position: absolute;
+	bottom: 15px;
+	opacity: 0;
+	// background-color: rgba(217, 224, 201, 0.2);
+	// overflow: hidden;
+	animation: rotateWord 30s linear;
+
+.story-subt-1 span:nth-child(2)  
+	animation-delay: 30s; 
+
+.story-subt-1 span:nth-child(3) 
+	animation-delay: 60s; 
+
+.story-subt-1 span:nth-child(4) 
+	animation-delay: 90s; 
+
+.story-subt-1 span:nth-child(5)
+	animation-delay: 120s; 
+
+.story-subt-1 span:nth-child(6)
+	animation-delay: 150s; 
+.story-subt-1 span:nth-child(7)
+	animation-delay: 180s; 
+.story-subt-1 span:nth-child(8)
+	animation-delay: 210s; 
+  
+footer
+	position: relative;
+	width: 100%;
+	margin: auto;
+	background: #2e3d06;
+.support
+	position: absolute;
+	font-family: Oswald;
+	width: 25%;
+	top: 55%;
+	font-size: 22px;
+	color: #fff;
+	margin: 5% 0 0 6%;
+	float: left;
+	text-align: center;
+
+/*MODAL*/
+
+#modal_form
+	position: absolute;
+	width: 80%;
+	height: auto;
+	background: #d9e0c9;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	display: none;
+	opasity: 0;
+	z-index: 5;
+	padding: 40px 40px 20px 40px;
+#modal_form p 
+	font-family: Oswald;
+	text-indent: 3%;
+	padding-top: 5px;
+	text-align: justify;
+	color: #3b3939;
+#modal_form h2 
+	font-family: Oswald;
+	color: #3b3939;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	font-weight: 500;
+
+.facebook-link,
+#modal_form a 
+	color: 	#242222;
+	padding-right: 10px;
+	font-size: 19px;
+.partners
+	width: 100%;
+	text-align: center;
+.lb-logo
+	width: 50%;
+	float: left;
+.lb-logo img
+	width: 195px;
+	height: 84px;
+	float: right;
+	padding: 5px 40px 10px 0;
+.canada-sup
+	width: 50%;
+	float: right;
+.canada-sup p 
+	text-align: center;
+	width: 60%;
+	float: left;
+	padding: 0 0 10px 30px;
+#modal_form #modal_close
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+#overlay
+	z-index: 3;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter: alpha(opacity=60);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+/*FILTER*/
+.filter
+	display: block;
+	text-align: center;
+	padding: 10px 10px;
+	// position: absolute;
+	// bottom: 10px;
+	background: #000000;
+	color: #ffffff;
+.filter a
+	font-family: Oswald;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px 15px	
+
+@media screen and (min-width: 1124px) and (max-width: 1440px)
+	.left-story h1, .right-story h1
+		font-size: 25px;
+		line-height: 34px;
+		font-weight: bold;
+	.left-story p, .right-story p
+		font-size: 18px;
+		line-height: 19px;
+
+@media screen and (min-width: 964px) and (max-width: 1124px)
+	.left-story h1, .right-story h1
+		font-size: 22px;
+		//line-height: 26px;
+	.left-story p, .right-story p
+		font-size: 16px;
+		line-height: 16px;
+	.support
+		font-size: 18px;
+
+@media screen and (min-width: 768px) and (max-width: 964px)
+	a.photo-author
+		font-size: 12px;
+	.left-story h1, .right-story h1
+		font-size: 18px;
+		font-weight: bold;
+	.left-story p, .right-story p
+		font-size: 12px;
+		line-height: 13px;
+		padding-top: 0px;
+	.left-foto>.play,
+	.left-foto>.stop
+		position: absolute;
+		top: 15px;
+		left: 87%;
+		width: 50px;
+		height: 50px;
+	.support
+		font-size: 16px;
+		line-height: 16px;
+	#modal_form
+		padding: 30px 30px 20px 30px;
+	#modal_form p 
+		font-size: 16px
+		text-indent: 3%;
+		padding-top: 4px;
+	#modal_form h2 
+		font-size: 18px
+		padding: 6px 0 10px 0;
+		text-align: center;
+	.facebook-link,
+	#modal_form a 
+		font-size: 17px;
+	.lb-logo img
+		width: 120px;
+		height: 64px;
+		float: right;
+		padding: 10px 75px 10px 0;
+	.canada-sup p 
+		text-align: center;
+		width: 80%;
+		float: left;
+		font-size: 16px;
+		padding: 0 0 10px 30px;
+	
+@media screen and (min-width: 615px) and (max-width: 768px)
+	a.photo-author
+		font-size: 10px;
+	.right-photo, .left-foto
+		width: 100%;
+	.left-story, .right-story
+		width: 100%;
+		margin: auto;
+	.left-story h1, .right-story h1, .small-left-story h1
+		padding: 15px 0 0 35px;
+		font-size: 20px;
+		text-align: left;
+	.left-story p, .right-story p
+		padding: 15px 30px 10px;
+		font-size: 12px;
+		line-height: 20px;
+	.DONBAS_LEX, .DNIPRO1_FOKS, .DNIPRO1_Chaba,
+	.PRESS_Gosha_Ivan, .DONBAS_Yar, .DONBAS_Lunatik,
+	.SVITIAZ_KUSHCH, .DNIPRO1_Savchenko, .DONBAS_MOSKIT, .Donbas_CHUB, .DONBAS_Zhora
+		display: flex;
+		flex-direction: column-reverse;
+	.play, .stop	
+		width: 40px;
+		height: 40px;
+	.left-foto>.play,
+	.left-foto>.stop
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	#image-bw
+		display: none;
+	.support
+		font-size: 14px;
+		line-height: 16px;
+	.modal
+		font-size: 16px;
+	#modal_form
+		margin-top: 20px;
+		padding: 30px 20px 20px 20px;
+	#modal_form p 
+		font-size: 14px
+		text-indent: 3%;
+		padding-top: 4px;
+	#modal_form h2 
+		font-size: 16px
+		padding: 6px 0 10px 0;
+		text-align: center;
+	.facebook-link,
+	#modal_form a 
+		font-size: 15px;
+	.lb-logo img
+		width: 100px;
+		height: 54px;
+		float: right;
+		padding: 15px 75px 10px 0;
+	.canada-sup p 
+		text-align: center;
+		width: 80%;
+		float: left;
+		font-size: 14px;
+		padding: 0 0 10px 30px;
+	.scrollup
+		right: 10px;
+		bottom: 20px;	
+@media screen and (min-width: 240px) and (max-width: 614px)
+	a.photo-author
+		font-size: 8px;
+		bottom: 6px;
+	.right-photo, .left-foto
+		width: 100%;
+	.left-story, .right-story
+		width: 100%;
+		margin: auto;
+		padding-bottom: 10px;
+	.left-story h1, .right-story h1
+		padding: 10px 0 0 20px;
+		font-size: 18px;
+		text-align: left;
+	.left-story p, .right-story p
+		padding: 10px 15px 10px 18px;
+		font-size: 12px;
+		line-height: 16px;
+	.DONBAS_LEX, .DNIPRO1_FOKS, .DNIPRO1_Chaba,
+	.PRESS_Gosha_Ivan, .DONBAS_Yar, .DONBAS_Lunatik,
+	.SVITIAZ_KUSHCH, .DNIPRO1_Savchenko, .DONBAS_MOSKIT, .Donbas_CHUB,
+	.DONBAS_Zhora
+		display: flex;
+		flex-direction: column-reverse;
+	.play, .stop
+		width: 40px;
+		height: 40px;
+	.left-foto>.play,
+	.left-foto>.stop
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	#image-bw
+		display: none;
+	.support
+		font-size: 8px;
+		line-height: 8px;
+	.social img
+		width: 14px;
+		height: 14px;
+	.modal
+		font-size: 14px;
+	#modal_form
+		margin-top: 20px;
+		padding: 20px 15px 15px 20px;
+	#modal_form p 
+		text-align: left;
+		font-size: 12px
+		text-indent: 3%;
+		padding-top: 4px;
+	#modal_form h2 
+		font-size: 14px
+		padding: 6px 0 8px 0;
+		text-align: center;
+	.facebook-link,
+	#modal_form a 
+		font-size: 13px;
+	.lb-logo img
+		width: 80px;
+		height: 44px;
+		float: right;
+		padding: 20px 30px 10px 0;
+	.canada-sup p 
+		text-align: center;
+		width: 90%;
+		float: left;
+		font-size: 12px;
+		padding: 0 0 10px 10px;
+	.scrollup
+		right: 10px;
+		bottom: 20px;
+
+	/* clearfix*/
+.wrapper:after,
+.partners:after,
+.list:after,
+.DONBAS_FILIN:after,
+.DONBAS_LEX:after,
+.DNIPRO1_AKNOD:after,
+.DNIPRO1_Chaba:after,
+.DNIPRO1_FOKS:after,
+.DNIPRO1_Pravosek:after,
+.DONBAS_Italianets:after,
+.DONBAS_MOSKIT:after,
+.PRESS_Gosha_Ivan:after,
+.DNIPRO1_Pekar:after,
+.DONBAS_Yar:after,
+.SVITIAZ_Liashuk:after,
+.DONBAS_Lunatik:after,
+.DONBAS_RED:after,
+.Donbas_Hmara:after,
+.SVITIAZ_KUSHCH:after,
+.ZSU_Chernyh:after,
+.DNIPRO1_Savchenko:after,
+.Donbas_CHUB:after,
+.DONBAS_HREK:after,
+.DONBAS_Zhora:after,
+#person-left:after,
+#person-right:after,
+footer:after
+  // content: '';
+  display: table;
+  clear: both;
